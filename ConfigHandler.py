@@ -10,9 +10,6 @@
 
 
 
-import requests #http request libray
-import json
-import httplib2
 import configparser
 import os
 
