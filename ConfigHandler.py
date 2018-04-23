@@ -1,5 +1,5 @@
 #===============================================================================#
-#Title           :Response handler                                              #
+#Title           :Config handler                                                #
 #Description     :Class to interface easily with config files                   #
 #Author          :joostenstomek@gmail.com                                       #
 #Date            :20/04/2018                                                    #
