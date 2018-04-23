@@ -18,7 +18,7 @@ from ConfigHandler import Config
 ##
 ## @brief      Class for test core functions.
 ##
-class TestCoreFunctions(unittest.TestCase):
+class TestConfigHandler(unittest.TestCase):
 	##
 	## @brief      method to setup some basic stuff
 	##	
