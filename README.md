@@ -30,6 +30,6 @@
 ### Optionally add as the parameter the absolute path to the config file
 	c = Config(C://absolute/path/to/config.ini')
 ### Get data from the config file
-	print(c.readData('section','option')
+	print(c.readData('section','option'))
 ### Write data to config file
 	c.writeData('section','option','data')
