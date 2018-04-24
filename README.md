@@ -22,16 +22,6 @@
 ### Option 2
 	python -W ignore test_ConfigHandler.py 
 
-# Example Reading from config file
-### Import module
-	from ConfigHandler import Config
-### Create object, section and option parameters are required
-	c = Config('Default',Default)
-### Optionally add as the second parameter the absolute path to the config file
-	c = Config('Default',Default,'C://absolute/path/to/config.ini')
-### Print data
-	print(c.data)
-
 # Example Reading to config file
 ### Import module
 	from ConfigHandler import Config
