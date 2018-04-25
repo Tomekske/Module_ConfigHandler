@@ -22,7 +22,7 @@
 ### Option 2
 	python -W ignore test_ConfigHandler.py 
 
-# Example Reading to config file
+# Example
 ### Import module
 	from ConfigHandler import Config
 ### Create object, section and option parameters are required
@@ -31,5 +31,5 @@
 	c = Config(C://absolute/path/to/config.ini')
 ### Get data from the config file
 	print(c.readData('section','option'))
-### Write data to config file
+### Write data to the config file
 	c.writeData('section','option','data')
