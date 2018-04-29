@@ -3,7 +3,7 @@
 #Description     :Class to interface easily with config files                   #
 #Author          :joostenstomek@gmail.com                                       #
 #Date            :24/04/2018                                                    #
-#Version         :1.0.1                                                         #
+#Version         :1.0.2                                                         #
 #Usage           :Python                                                        #
 #Python version  :3.6                                                           #
 #===============================================================================#
