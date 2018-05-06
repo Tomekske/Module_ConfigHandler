@@ -33,3 +33,7 @@
 	print(c.readData('section','option'))
 ### Write data to the config file
 	c.writeData('section','option','data')
+### Check if a section in the config file exsists
+	print(c.checkSection('section'))
+### Check if an option in the config file exsists 
+	print(c.checkOption('section','option'))
