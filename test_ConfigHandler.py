@@ -3,7 +3,7 @@
 #Description     :Unit test to test Config class                                #
 #Author          :joostenstomek@gmail.com                                       #
 #Date            :20/04/2018                                                    #
-#Version         :1.0.0                                                         #
+#Version         :1.0.1                                                         #
 #Usage           :Python                                                        #
 #Python version  :3.6                                                           #
 #===============================================================================#
@@ -66,6 +66,15 @@ class TestConfigHandler(unittest.TestCase):
 	def test_section(self):
 		self.assertTrue(self.f_valid.checkSection('Default')) #sections exsists
 		self.assertFalse(self.f_valid.checkSection('Deffsdault')) #section does not exsist
+
+
+
+	##
+	## @brief      Method to test if option exsists or not
+	##
+	def test_option(self):
+		self.assertTrue(self.f_valid.checkOption('Default','default')) #sections exsists
+		self.assertFalse(self.f_valid.checkOption('Default','gfd')) #sections exsists
 
 
 
