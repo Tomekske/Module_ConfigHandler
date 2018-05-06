@@ -3,7 +3,7 @@
 #Description     :Class to interface easily with config files                   #
 #Author          :joostenstomek@gmail.com                                       #
 #Date            :24/04/2018                                                    #
-#Version         :1.0.2                                                         #
+#Version         :1.0.3                                                         #
 #Usage           :Python                                                        #
 #Python version  :3.6                                                           #
 #===============================================================================#
@@ -76,6 +76,17 @@ class Config():
 			return True
 		else:
 			return False
+
+
+
+	##
+	## @brief      Method to check wether a option exsists or not
+	## @param      section  The section that is linked to the option
+	## @param      option  The option you want to test
+	## @return     Return boolean 
+	##
+	def checkOption(self, section, option):
+		return self.file.has_option(section, option)
 
 
 
