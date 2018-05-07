@@ -3,7 +3,7 @@
 #Description     :Unit test to test Config class                                #
 #Author          :joostenstomek@gmail.com                                       #
 #Date            :20/04/2018                                                    #
-#Version         :1.0.1                                                         #
+#Version         :1.0.2                                                         #
 #Usage           :Python                                                        #
 #Python version  :3.6                                                           #
 #===============================================================================#
@@ -75,6 +75,30 @@ class TestConfigHandler(unittest.TestCase):
 	def test_option(self):
 		self.assertTrue(self.f_valid.checkOption('Default','default')) #sections exsists
 		self.assertFalse(self.f_valid.checkOption('Default','gfd')) #sections exsists
+
+
+
+	##
+	## @brief      Method to test a given section has options
+	##
+	def test_getOption(self):
+		print(self.f_valid.getOptions('Default'))
+		print(self.checkListNotEmpty(self.f_valid.getOptions('tret')))
+
+
+
+	##
+	## @brief      Helper function to test if a list is empty or not
+	## @param      lst   The list you want to test
+	## @return     if list isn't empty return True, if empty return False
+	##
+	def checkListNotEmpty(self, lst):
+		items = len(lst)
+
+		if items > 0:
+			return True
+		else:
+			return False
 
 
 
