@@ -82,8 +82,8 @@ class TestConfigHandler(unittest.TestCase):
 	## @brief      Method to test a given section has options
 	##
 	def test_getOption(self):
-		print(self.f_valid.getOptions('Default'))
-		print(self.checkListNotEmpty(self.f_valid.getOptions('tret')))
+		self.assertTrue(self.f_valid.getOptions('Default'))
+		self.assertFalse(self.checkListNotEmpty(self.f_valid.getOptions('tret')))
 
 
 
@@ -95,6 +95,7 @@ class TestConfigHandler(unittest.TestCase):
 	def checkListNotEmpty(self, lst):
 		items = len(lst)
 
+		#if there are items in the list return True, if empty return False
 		if items > 0:
 			return True
 		else:
