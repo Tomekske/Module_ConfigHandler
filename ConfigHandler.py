@@ -3,15 +3,14 @@
 #Description     :Class to interface easily with config files                   #
 #Author          :joostenstomek@gmail.com                                       #
 #Date            :24/04/2018                                                    #
-#Version         :1.0.4                                                         #
+#Version         :1.0.5                                                         #
 #Usage           :Python                                                        #
 #Python version  :3.6                                                           #
 #===============================================================================#
 
 
 
-import configparser
-import os
+import configparser, os
 
 
 
@@ -23,7 +22,7 @@ class Config():
 	## @brief      Constructor of the Config class
 	## @param      file_location the location of the config file [default = config.ini]  
 	##
-	def __init__(self, file_location = 'config.ini'):
+	def __init__(self, file_location = 'Config/config.ini'):
 		self.location = file_location
 		self.exsist = self.fileExistence(file_location)
 		self.file = self.fileObject(file_location)

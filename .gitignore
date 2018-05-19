@@ -4,3 +4,6 @@ __pycache__
 build
 dist
 ResponseHandler.egg-info
+virtual
+__pycache__
+ConfigHandler.egg-info

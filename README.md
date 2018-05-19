@@ -5,16 +5,13 @@
 	Joostens Tomek
 ### Description
 	Class to interface easily with config files 
+### Version
+	1.0.5
 
-# Download modules
-	pip install configparser
 
-# Module usage
-### 1. Download module 
-	git clone https://github.com/Tomekske/Module_ConfigHandler
-### 2. Extract project
-### 3. Move ConfigHandler.py script to your project location
-### 4. Move test_ConfigHandler.py script to your project location
+# Setup
+	python setup.py install
+
 
 # Test module
 ### Option 1
@@ -22,12 +19,13 @@
 ### Option 2
 	python -W ignore test_ConfigHandler.py 
 
+
 # Example
 ### Import module
-	from ConfigHandler import Config
+	import ConfigHandler
 ### Create object, section and option parameters are required
-	c = Config()
-### Optionally add as the parameter the absolute path to the config file
+	c = ConfigHandler.Config()
+### Optionally add as the parameter the absolute or relative path to the config file
 	c = Config(C://absolute/path/to/config.ini')
 ### Get data from the config file
 	print(c.readData('section','option'))
